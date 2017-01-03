@@ -28,7 +28,8 @@ app.directive('compare',function() {
             return v == sco.orgText;
         }
         sco.$watch("orgText",function(){
-         con.$validate(); });
+         con.$validate();
+          });
     }
     return o;
 
