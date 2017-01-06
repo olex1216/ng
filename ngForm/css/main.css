@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+/*顶部提示 样式*/
+.tips{
+    width: 100%;
+    height: 30px;
+    background-color: #707070;
+}
+
+.tips-left{
+    font-family: '微软雅黑';
+    font-size: 12px;
+    line-height: 30px;
+
+    margin-left: 200px;
+
+    color: #fff;
+}
+
+.tips-right
+{
+    font-family: '微软雅黑';
+    font-size: 12px;
+    line-height: 30px;
+
+    position: absolute;
+    right: 150px;
+
+    margin: 0 auto;
+    color: #fff;
+}
+
+.tips-right>.kefu{
+    font-size: 12px;
+
+    position: relative;
+    right: 60px;
+    bottom: 3px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+img.chat
+{
+    position: relative;
+    top: 4px;
+}
+/*导航样式*/
+header
+{
+    margin: 0;
+    border-bottom: 2px solid #00616a;
+    background-color: #14b8c1;
+    box-shadow: 0 0 0 1px #aaa;
+}
+
+.logo
+{
+    float:left;
+
+    margin: 13px 180px;
+}
+
+nav
+{
+    margin-right: 180px;
+}
+
+nav ul
+{
+    height: 80px;
+
+    list-style: none;
+}
+
+nav ul li
+{
+    float: right;
+
+    height: 20px;
+    margin: 30px 0;
+}
+
+nav ul li a
+{
+    font-family: '微软雅黑';
+    line-height: 20px;
+
+    display: block;
+
+    width: 90px;
+    height: 20px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+}
+
+ul > li + li
+{
+    border-right: 1px solid #7ddaeb;
+}
+
+/*页面主体样式*/
+main
+{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.expects{
+    height: 120px;
+    width: 976px;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    background-color: #fff;
+}
+
+.expect{
+    float: left;
+    width: 25%;
+    height: 100%;
+
+}
+
+.current-expect{
+    width: 50%;
+}
+.red {
+    color: red;
+}
+
+.next-expect>.expect-info{
+    padding: 20px;
+}
+
+
+.expect-info{
+    height: 100px;
+    border-right: 1px solid #d3d3d3;
+
+}
+
+strong{
+    font-family: '微软雅黑';
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+/*当期开奖*/
+.balls{
+    width: 100%;
+
+    list-style: none;
+    margin: 0 10px;
+
+}
+.ball{
+    float: left;
+    list-style: none;
+    background: url(../img/circle_bg.png) no-repeat center;
+    width: 19%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 35px;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    border:none;
+}
+
+/*历史开奖*/
+.opentime-title{
+    margin-right: 30px;
+}
+.history-title{
+    margin-left: 20px;
+}
+
+.his-opencode{
+    border:1px solid #d3d3d3;
+    border-radius:10px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.his-opencode>span{
+    margin: 5px;
+    font-size: 15px;
+}
+
+.clearfix:after{
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: '020';
+}
+
+.clearfix{
+     /*触发 hasLayout*/
+    zoom: 1;
+}
+
+.content{
+    z-index: 100;
+}
