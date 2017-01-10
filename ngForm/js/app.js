@@ -48,16 +48,10 @@ app.factory('dataService', ['$http', '$q', function($http, $q) {
     };
 }]);
 
-
-
-
-
-
 //filter--过滤掉opencode中的","
 app.filter('strToArr',function() {
     return function (str) {
-        var arr = str.split(',').sort();//str转为升序的arr
-        var newStr = arr.join(' ');//arr转为加空格后的str
+        var newStr = str.split(',').sort().join(' ');//str转为数值升序的str
         return newStr;
     };
 
